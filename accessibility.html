@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nn">
 
 
 <head>
@@ -7,11 +7,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessibility</title>
+    <title>Tilgjengelighet</title>
 </head>
 
 
 <body>
+<!--Header med navigation bar-->
+
     <a tabindex="1" class="skip_to_content" href="#content">Skip to main content</a>
     <header>
         <nav aria-label="Navigation">
@@ -27,18 +29,21 @@
 
     </header>
 
+<!--Sidens hovedinnhold-->
+
     <main id="content">
 
         <div id="main_content_acc">
 
             <div id="tekst">
-                <h2 tabindex="0">Vår framgangsmåte</h2>
+                <h2 tabindex="0">Vår fremgangsmåte</h2>
                 <p tabindex="0"> Da vi startet dette prosjektet søkte vi rundt og så på forskjellige nettsider med ulike tema for inspirasjon.
-                    En side vi likte var <a href="https://www.eventlokaler.no">eventlokaler.no</a>, og vi ville bruke denne nettsiden som utgangspunkt. 
+                    En side vi likte var <a href="https://www.eventlokaler.no" target="_blank">eventlokaler.no</a>, og vi ville bruke denne nettsiden som utgangspunkt. 
                     Vi kjørte nettsiden gjennom <abbr title="Web Accessibility Evaluation Tool">WAVE</abbr> og fant at det var flere elementer med lav kontrast. 
-                    Vi bestemte derfor for å ikke bruke gul som vår hovedfarge, og unngå og ha overskrifter over bilder. 
+                    Vi bestemte derfor for å ikke bruke gul som vår hovedfarge, og i tillegg unngå og ha overskrifter og tekst oppå bilder. 
                 </p>
                 <p tabindex="0" >
+                    Gjennom prosjektet har vi prøvd å følge de tre første prinsippene bak <abbr title="Web Content Accessibility Guidelines"><a href="https://www.w3.org/TR/WCAG/" target="_blank">WCAG</a></abbr>,"Perceivable", "Operable" og "Understandable".
                     For å gjøre siden mest mulig tilgjengelig gikk vi for en mørk rødfarge med hvit tekst for høy kontrast. Vi har lagt til «tabindex» og «skip to main content» 
                     for at nettsidene skal være manøvrerbare med kun tastatur. Vi har også brukt screen reader extension til chrome for å teste at den leser det den skal.
                     For bildene har vi lagt inn en beskrivende alt-tekst.
@@ -52,12 +57,12 @@
             <div class="bilder">
                 <div class="Wave_test">
                 <img tabindex="0" src="img/WAVE_startside.JPG" alt="WAVE rapport for startsiden, ingen errors og ingen lave kontraster">
-                <p class="bildetekst">WAVE rapport for startsiden. Her var det ingen errors og ta tak i <br> "Alerts" var i hovedsak knyttet til teksten i footer  </p>
+                <p tabindex="0" class="bildetekst">WAVE rapport for startsiden. Her var det ingen errors og ta tak i <br> "Alerts" var i hovedsak knyttet til teksten i footer  </p>
                 </div>
 
                 <div class="Wave_test">
                 <img tabindex="0" src="img/WAVE_booking.JPG" alt="WAVE rapport for booking siden">
-                <p class="bildetekst">WAVE rapport for bookingsiden. Her var det to errors i sammenheng <br> med labels i bookingskjemaet."Alerts" var i hovedsak knyttet til teksten i footer</p>
+                <p tabindex="0" class="bildetekst">WAVE rapport for bookingsiden. Her var det to errors i sammenheng <br> med labels i bookingskjemaet."Alerts" var i hovedsak knyttet til teksten i footer</p>
                 </div>
             </div>
 
@@ -65,12 +70,12 @@
             <div class="bilder">
                 <div class="Wave_test">
                 <img tabindex="0" src="img/WAVE_kafe.JPG" alt="WAVE rapport for kafé siden">
-                <p class="bildetekst">WAVE rapport for kafé siden. Her var det ingen errors og ta tak i <br> "Alerts" var i hovedsak knyttet til teksten i footer</p>
+                <p tabindex="0" class="bildetekst">WAVE rapport for kafé siden. Her var det ingen errors og ta tak i <br> "Alerts" var i hovedsak knyttet til teksten i footer</p>
                 </div>
 
                 <div class="Wave_test">
                 <img tabindex="0" src="img/WAVE_aktuelt.JPG" alt="WAVE rapprot for akutelt siden">
-                <p class="bildetekst">WAVE rapport for aktuelt siden. Her var det feil i skiptocontent funksjonen, <br> som nå er rettet opp.
+                <p tabindex="0" class="bildetekst">WAVE rapport for aktuelt siden. Her var det feil i skiptocontent funksjonen, <br> som nå er rettet opp.
                     "Alerts" var i hovedsak knyttet til teksten i footer</p>
                 </div> 
             </div>
@@ -81,6 +86,7 @@
 
     </main>
 
+    <!--Sidens footer-->
 
     <footer>
         <div id="footer_left"> 

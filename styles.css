@@ -145,15 +145,18 @@ li a.active {
 #content {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  justify-content: center;
+  max-width: 90%;
   align-items: center;
+  margin: 0 auto;
 } 
 
 #form {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  /*max-width: 100%;*/
+  justify-content: center;
+  max-width: 100%;
+  width: 70%;
 }
 
 
@@ -276,7 +279,7 @@ h2 {
 
 
 
-/* Css for Teknologi og samfunn siden*/
+/* Css for Teknologi og samfunn (aktuelt) siden*/
 #tek_sam_header {
   background-color: #111111;
   height: 25vh;
@@ -318,6 +321,8 @@ h2 {
 }
 
 iframe {
+  width:500px;
+  height: 400px;;
   
 }
 
@@ -331,7 +336,7 @@ iframe {
 
 .brød_tekst {
   margin-top: 1%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
 }
 
@@ -362,8 +367,8 @@ ul.tech_list {
 
 .tech_punkt {
   background-color: white; 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
   margin-bottom: 30%;
   margin-top: 10%;
 }
@@ -380,24 +385,53 @@ ul.tech_list {
 }
 
 
+/*CSS for andre enheter enn PC-skjerm*/
+/*Tablets*/
 
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 820px) {
 
   h1 {
-    font-size: 50px;
+    font-size: 90px;
   }
 
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: x-large;
+  }
   ul {
     justify-content: center;
   }
 
   li a {
-    font-size: small;
+    font-size: x-large;
     text-align: center;
   }
 
+  img {
+    max-width: 100%;
+  }
+
+  #footer_left {
+    margin-bottom: 3%;
+  }
+
+  .bildetekst {
+    font-size: x-large;
+  }
+
   #main_content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #content {
     flex-direction: column;
     align-items: center;
   }
@@ -408,10 +442,14 @@ ul.tech_list {
   }
  
 
-  #bilder {
-    width: 90%;
-
+  .bilder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  
 
   #content_meny {
     flex-direction: column;
@@ -434,9 +472,169 @@ ul.tech_list {
     width: 100%;
   }
 
+  /*Aktuelt siden*/
+
+  #tekst_head {
+    font-size: 50px;
+  }
+
+  .tech_overskrift {
+    font-size: 45px;
+    text-align: center;
+  }
+  #content_tech {
+    flex-direction: column;
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tekst_tech {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 1%;
+  }
+
+  .brød_tekst {
+    text-align: center;
+  }
+
+  iframe {
+    width: 700px;
+    height: 500px;
+  }
+
+  #tech_bilder { 
+    border: solid;
+    border-right: hidden;
+    border-top: hidden;
+    border-left: hidden;
+   
+  }
+
+  .tech_punkt {
+    font-size: 30px;
+  }
+
+}
+
+/*Stor mobil*/
+
+@media screen and (max-width: 640px) {
+
+  h1 {
+    font-size: 50px;
+  }
+
+  img {
+  width: 100%;
+  height: auto;
+
+  }
+  ul {
+    justify-content: center;
+  }
+
+  li a {
+    font-size: small;
+    text-align: center;
+  }
+
+  #main_content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #tekst {
+    width: 90%;
+
+  }
+ 
+
+  .bilder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+
+  #content_meny {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  #meny_left {
+    flex-direction: row;
+    width: 90%;
+    margin-top: 2%;
+  }
+
+  #meny_center {
+    width: 90%;
+  }
+  #meny_right {
+    flex-direction: row;
+    width: 90%;
+  }
+  #form {
+    width: 100%;
+  }
+
+  /*Aktuelt siden*/
+
+  #tekst_head {
+    font-size: x-large;
+  }
+
+  .tech_overskrift {
+    font-size: large;
+    text-align: center;
+  }
+  #content_tech {
+    flex-direction: column;
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tekst_tech {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 1%;
+  }
+
+  .brød_tekst {
+    text-align: center;
+  }
+
+  iframe {
+    width: 350px;
+    height: 100;
+  }
+
+  #tech_bilder { 
+    border: solid;
+    border-right: hidden;
+    border-top: hidden;
+    border-left: hidden;
+   
+  }
+
   
 
 }
+
+/*Liten mobil*/
 
 @media screen and (max-width: 400px) {
 
@@ -452,6 +650,9 @@ ul.tech_list {
   #form {
     width: 100%;
   }
-}
 
+  iframe {
+    width: 300px;
+  }
+}
 
