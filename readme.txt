@@ -1,4 +1,4 @@
-Kilder til tekst fakenews tekst: 
+Kilder til fakenews tekst: 
 
 Alme, V. (2019). Falske nyheter som sjanger. In ffi-publikasjoner.archive.knowledgearc.net. https://ffi-publikasjoner.archive.knowledgearc.net/handle/20.500.12242/2562
 Bente Kalsnes. (2019). Falske nyheter : løgn, desinformasjon og propaganda i den digitale offentligheten. Cappelen Damm.
@@ -12,7 +12,7 @@ Medietilsynet. (2019, May 27).  Eldre er dårligst på å gjenkjenne falske nyhe
 
 Kilder til bilder: 
 
-De fleste bildene ble funnet ved hjelp av "creative commons-lisenser" verktøyet på google-bilder. Ellers er kilden oppgitt her eller i bildeteksten
+De fleste bildene ble funnet ved hjelp av "creative commons-lisenser" verktøyet på google-bilder, og kilden er oppgitt her eller i bildeteksten
 
 Framside: Rawpixel
 Meny: https://cdn.stocksnap.io/img-thumbs/960w/food-burger_WYL5KWIPUD.jpg
