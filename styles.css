@@ -28,6 +28,7 @@ p {
 
 .button {
 font-size: xx-large;
+text-decoration: none;
 }
 
 header {
@@ -341,7 +342,7 @@ iframe {
 }
 
 
-.tekst_tech {
+#tekst_tech {
   display: flex;
   flex-direction: column;
   max-width: 40%;
@@ -421,6 +422,11 @@ ul.tech_list {
 
   #footer_left {
     margin-bottom: 3%;
+    
+  }
+
+  #main_content_wel {
+    margin-bottom: 20%;
   }
 
   .bildetekst {
@@ -486,7 +492,7 @@ ul.tech_list {
   #content_tech {
     flex-direction: column;
     max-width: 100%;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -496,6 +502,8 @@ ul.tech_list {
     max-width: 100%;
     width: 100%;
     margin-top: 1%;
+    align-items: center;
+    justify-content: center;
   }
 
   .brød_tekst {
@@ -503,7 +511,7 @@ ul.tech_list {
   }
 
   iframe {
-    width: 700px;
+    width: 750px;
     height: 500px;
   }
 
@@ -534,6 +542,7 @@ ul.tech_list {
   height: auto;
 
   }
+
   ul {
     justify-content: center;
   }
@@ -617,12 +626,16 @@ ul.tech_list {
   }
 
   #tekst_tech {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     width: 100%;
     margin-top: 1%;
   }
 
   .brød_tekst {
+    width: 100%;
+    max-width: 100%;
     text-align: center;
     font-size: large;
   }
