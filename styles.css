@@ -403,7 +403,7 @@ ul.tech_list {
   }
 
   p {
-    font-size: x-large;
+    font-size: large;
   }
   ul {
     justify-content: center;
@@ -437,7 +437,7 @@ ul.tech_list {
   }
 
   #tekst {
-    width: 90%;
+    width: 100%;
 
   }
  
@@ -556,16 +556,24 @@ ul.tech_list {
     width: 90%;
 
   }
- 
 
   .bilder {
     width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  
+  #main_content_acc {
+    max-width: 100%;
+  }
+
+  .bildetekst {
+    font-size: medium;
+  }
+
+  /*Meny siden*/
 
   #content_meny {
     flex-direction: column;
@@ -595,7 +603,7 @@ ul.tech_list {
   }
 
   .tech_overskrift {
-    font-size: large;
+    font-size: x-large;
     text-align: center;
   }
   #content_tech {
@@ -615,6 +623,7 @@ ul.tech_list {
 
   .brød_tekst {
     text-align: center;
+    font-size: large;
   }
 
   iframe {
@@ -639,7 +648,11 @@ ul.tech_list {
 @media screen and (max-width: 400px) {
 
   h1 {
-    font-size: 50px;
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
   }
 
   li a {
