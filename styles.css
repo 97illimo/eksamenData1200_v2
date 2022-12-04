@@ -340,7 +340,8 @@ iframe {
   text-align: left;
 }
 
-#tekst_tech {
+
+.tekst_tech {
   display: flex;
   flex-direction: column;
   max-width: 40%;
