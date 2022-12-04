@@ -33,24 +33,49 @@
 
             <div id="tekst">
                 <h2 tabindex="0">Vår framgangsmåte</h2>
-                <p tabindex="0">When we started on this project we looked at different booking sites to get inspiration.
-                    The one we liked the most was <a href="https://www.eventlokaler.no">eventlokaler.no</a>
-                    Now that we found a layout we liked we used the <abbr
-                        title="Web Accessibility Evaluation Tool">WAVE</abbr> site on eventlokaler.no to look for areas
-                    where we could improve the accessibility.
-                    As you can see on the first WAVE report the site suffered with a few low contrast elements. This is
-                    something we wanted to avoid.
-                    For the color choices on our webpage we wanted to keep a light theme, where the background is light
-                    with dark text on top for high contrast. To have some variety we chose ___
+                <p tabindex="0"> Da vi startet dette prosjektet søkte vi rundt og så på forskjellige nettsider med ulike tema for inspirasjon.
+                    En side vi likte var <a href="https://www.eventlokaler.no">eventlokaler.no</a>, og vi ville bruke denne nettsiden som utgangspunkt. 
+                    Vi kjørte nettsiden gjennom <abbr title="Web Accessibility Evaluation Tool">WAVE</abbr> og fant at det var flere elementer med lav kontrast. 
+                    Vi bestemte derfor for å ikke bruke gul som vår hovedfarge, og unngå og ha overskrifter over bilder. 
                 </p>
+                <p tabindex="0" >
+                    For å gjøre siden mest mulig tilgjengelig gikk vi for en mørk rødfarge med hvit tekst for høy kontrast. Vi har lagt til «tabindex» og «skip to main content» 
+                    for at nettsidene skal være manøvrerbare med kun tastatur. Vi har også brukt screen reader extension til chrome for å teste at den leser det den skal.
+                    For bildene har vi lagt inn en beskrivende alt-tekst.
+                    Da vi var fornøyde med nettsiden kjørte vi en WAVE test og resultatene kan man se nederst på siden. 
+                    Den viste et par feil i koden, som vi fikk rettet opp, men ellers var vi fornøyde med resultatet. "Alerts" var i hovedsak knyttet til teksten i footer  
+                </p>  
             </div>
 
 
 
-            <div id="bilder">
-                <img tabindex="0" src="img/Wave_eventlokaler.JPG"
-                    alt="WAVE report from eventlokaler.no where there are six contrast errors.">
+            <div class="bilder">
+                <div class="Wave_test">
+                <img tabindex="0" src="img/WAVE_startside.JPG" alt="WAVE rapport for startsiden, ingen errors og ingen lave kontraster">
+                <p class="bildetekst">WAVE rapport for startsiden. Her var det ingen errors og ta tak i <br> "Alerts" var i hovedsak knyttet til teksten i footer  </p>
+                </div>
+
+                <div class="Wave_test">
+                <img tabindex="0" src="img/WAVE_booking.JPG" alt="WAVE rapport for booking siden">
+                <p class="bildetekst">WAVE rapport for bookingsiden. Her var det to errors i sammenheng <br> med labels i bookingskjemaet."Alerts" var i hovedsak knyttet til teksten i footer</p>
+                </div>
             </div>
+
+
+            <div class="bilder">
+                <div class="Wave_test">
+                <img tabindex="0" src="img/WAVE_kafe.JPG" alt="WAVE rapport for kafé siden">
+                <p class="bildetekst">WAVE rapport for kafé siden. Her var det ingen errors og ta tak i <br> "Alerts" var i hovedsak knyttet til teksten i footer</p>
+                </div>
+
+                <div class="Wave_test">
+                <img tabindex="0" src="img/WAVE_aktuelt.JPG" alt="WAVE rapprot for akutelt siden">
+                <p class="bildetekst">WAVE rapport for aktuelt siden. Her var det feil i skiptocontent funksjonen, <br> som nå er rettet opp.
+                    "Alerts" var i hovedsak knyttet til teksten i footer</p>
+                </div> 
+            </div>
+        
+             
         </div>
 
 

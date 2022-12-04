@@ -39,6 +39,17 @@ header {
   color: white;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 2%;
+} 
+
 #forside{
   background-image: url("img/Header_bilde1.png");
   background-size: cover;
@@ -87,15 +98,6 @@ li a.active {
 
 /*Css for welcome page*/ 
 
-
-
-#main_content_acc {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
-
 #main_content_wel {
   padding: 20px;
   background-color: white;
@@ -106,32 +108,37 @@ li a.active {
   margin-top: 2%;
 }
 
+/* CSS for tilgjengelighets siden*/
+
+#main_content_acc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90%;
+  align-items: center;
+}
+
 #tekst {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 65%;
   margin-top: 1%;
 }
 
-#bilder {
+.bilder {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  width: 45%;
-  margin-top: 5%;
+  max-width: 100%;
+  width: 90%;
+  margin-top: 3%;
   overflow: hidden;
 }
 
- img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 65%;
-  height: auto;
-  overflow: hidden;
-  border-radius: 15px;
-  margin-bottom: 2%;
-} 
-
+.Wave_test {
+  max-width: 70%;
+  width: 50%;
+}
 
 
 /*Css for booking skjema*/
